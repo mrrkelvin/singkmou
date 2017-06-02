@@ -1,0 +1,46 @@
+<ion-view title="Booking" id="page2">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button button-icon icon ion-ios-book-outline"></button>
+  </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+    <form id="singKMou-form1" name="myForm" class="list" ng-submit="book()" >
+        <label class="item item-input" id="singKMou-input2">
+        <span class="input-label">Contact No:</span>
+        <input type="text" placeholder=""  ng-model="Room.contactNo" required>
+      </label>
+      <label class="item item-input" id="singKMou-input1">
+        <span class="input-label">Name:</span>
+        <input type="text" name="name" placeholder="" ng-model="name" required  ng-pattern="/^((?![0-9]).)*$/">
+      </label>
+      <p ng-show="myForm.name.$error.pattern" style="color:red;text-align:center;">Incorrect Name format</p>
+      <label class="item item-input item-stacked-label" id="singKMou-input2">
+        <span class="input-label">Hours (1-10)</span>
+        <input type="number" placeholder="How many hours you want to sing?" ng-model="hours" required>
+      </label>
+      <label class="item item-select" id="singKMou-select1">
+        <span class="input-label">Choose a room</span>
+        <select ng-model="myRoom" ng-change="selectRoom(myRoom)" required>
+          <option ng-repeat="room in rooms">{{room.roomType}}</option>
+        </select>
+      </label>
+      <label class="item item-input" id="singKMou-input5">
+        <span class="input-label">RM/hour:</span>
+        <input type="text" placeholder="" ng-model="Room.roomPrice" value="{{Room.roomPrice}}" disabled>
+      </label>
+      <label class="item item-input item-stacked-label" id="singKMou-input6">
+        <span class="input-label">Date:</span>
+        <input type="date" id="startDate" placeholder="" min="{{date|date:'yyyy-MM-dd'}}" ng-model="date" required>
+      </label>
+      <label class="item item-input item-stacked-label" id="singKMou-input7">
+        <span class="input-label">Time:</span>
+        <input type="time" id="startTime" ng-model="startTime" placeholder="" required>
+      </label>
+      <div class="spacer" style="width: 300px; height: 48px;"></div>
+      <label class="item item-input" id="singKMou-input6">
+        <span class="input-label">Total (RM): </span>
+        <input type="text" placeholder="" value="{{hours*Room.roomPrice}}" disabled>
+      </label>
+      <input type="submit" class="button button-positive button-block" ng-disabled="myForm.$invalid" value="Book"/>
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view title="History of Booking" id="page3" cache-view="false">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button button-icon icon ion-ios-list-outline"></button>
+  </ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+    <ion-list ng-repeat="booking in bookings">
+  	 	<div class="card card-wraper">
+	    	<ion-list-header color="light"><h3>Booking ID: {{booking.booking_id}}</h3></ion-list-header>
+	    	<ion-item>Room ID: {{booking.room_id}}</ion-item>
+        <ion-item>Contact No: {{booking.contact_no}}</ion-item>
+        <ion-item>Name: {{booking.user_name}}</ion-item>
+	    	<ion-item>Total Price: {{booking.total_price}}</ion-item>
+        <ion-item>Time: {{booking.start_time}}</ion-item>
+        <ion-item>Date: {{booking.datePicker}}</ion-item>
+        <ion-item>Booking Status: {{booking.status}}</ion-item>
+    	</div>
+  	</ion-list>
+  </ion-content>
+</ion-view>
