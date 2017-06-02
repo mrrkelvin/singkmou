@@ -37,7 +37,7 @@ A booking application for karaoke. (For Uni Project purpose)
         8. ionic config set gcm_key <your-gcm-project-number> -> to set sender id retrieved from Cloud Messaging in Firebase.
         9. ionic io init -> create an new app in Ionic.io to use the ionic push notifications service.
 
-Ionic App Base
+#Ionic App Base
 =====================
 
 A starting project for Ionic that optionally supports using custom SCSS.
@@ -60,7 +60,5 @@ $ ionic start myProject tabs
 
 More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
 
-## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/submit-issue/) to the main Ionic repository.
 =======
 
