@@ -1,30 +1,3 @@
-<<<<<<< HEAD
-Ionic App Base
-=====================
-
-A starting project for Ionic that optionally supports using custom SCSS.
-
-## Using this project
-
-We recommend using the [Ionic CLI](https://github.com/driftyco/ionic-cli) to create new Ionic projects that are based on this project but use a ready-made starter template.
-
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
-
-```bash
-$ npm install -g ionic
-```
-
-Then run: 
-
-```bash
-$ ionic start myProject tabs
-```
-
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
-
-## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/submit-issue/) to the main Ionic repository.
-=======
 # singkmou
 A booking application for karaoke. (For Uni Project purpose)
 
@@ -63,7 +36,31 @@ A booking application for karaoke. (For Uni Project purpose)
         7. ionic cordova plugin add phonegap-plugin-push --variable SENDER_ID="<your-gcm-project-number>" -> to offer support to receive and handle native push notifications with a single unified API
         8. ionic config set gcm_key <your-gcm-project-number> -> to set sender id retrieved from Cloud Messaging in Firebase.
         9. ionic io init -> create an new app in Ionic.io to use the ionic push notifications service.
->>>>>>> bc62d90a37c0b66a454c84e23bccce69be5a0ea6
-# singkmou
-# singkmou
-# singkmou
+
+Ionic App Base
+=====================
+
+A starting project for Ionic that optionally supports using custom SCSS.
+
+## Using this project
+
+We recommend using the [Ionic CLI](https://github.com/driftyco/ionic-cli) to create new Ionic projects that are based on this project but use a ready-made starter template.
+
+For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
+
+```bash
+$ npm install -g ionic
+```
+
+Then run: 
+
+```bash
+$ ionic start myProject tabs
+```
+
+More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
+
+## Issues
+Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/submit-issue/) to the main Ionic repository.
+=======
+
